@@ -8,4 +8,9 @@ class UserSelectionsController < ApplicationController
     @user_selection.destroy
     redirect_to user_selections_path
   end
+
+  def like
+    @wine = Wine.all.find(params[:id])
+
+  end
 end
