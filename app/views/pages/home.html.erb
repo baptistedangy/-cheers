@@ -1,2 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-banner">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/assets/home.png');"></div>
+  <div class="home-background" style="background-image: url('/assets/home-background.png');">
+    <div class="container">
+      <h1>Qu'est ce qu'on boit ce soir?</h1>
+      <br>
+      <br>
+      <p>Cheers, l'appli qui va vous faire des amis</p>
+    </div>
+  </div>
+   <%= render "shared/search_form" %>
+</div>
+
