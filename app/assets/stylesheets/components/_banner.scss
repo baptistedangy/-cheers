@@ -1,0 +1,31 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.home-background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 67%;
+  padding: 6.2rem 1.4rem 9rem;
+}
+
+.home-background h1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  opacity: 1.7;
+  font-size: 22px;
+  font-weight: lighter;
+  margin: 8px;
+  text-align: center;
+  color: #10002b;
+  margin: -30px 12px;
+  }
+
+.home-background p {
+  font-size: 20px;
+  color: #10002b;
+  opacity: 1.7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
