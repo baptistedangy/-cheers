@@ -1,0 +1,25 @@
+<div class="card-trip">
+  <img src="https://images.unsplash.com/photo-1503427128716-12b0ed4822bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" />
+  <div class="card-trip-infos">
+    <div>
+      <h2 class="text-center mb-3">@wine.name</h2>
+      <div class="d-flex justify-content-between">
+        <div>
+
+          <p><strong>Région: <%= image_tag("https://ruedesvignerons-548724.c.cdn77.org/images/front/svg-rounded-flags/fr.svg", size: "10x10", :alt => "rss feed") %> Bourgogne</strong></p>
+          <p><strong>Prix: €€</strong></p>
+          <p><strong>Meilleurs millésimes: 1995, 2010</strong></p>
+          <p><strong>Cépages: Pinot Noir</strong></p>
+          <p><strong>Couleur: Rouge</strong></p>
+        </div>
+        <div>
+          <p> <%= image_tag("https://www.terroirs-france.com/picts/cartebourgogne.gif", {:style => "width:80px"}) %> </p>
+        </div>
+      </div>
+      <p class="text-center mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi qui iste perferendis veniam facere tempora quas cum necessitatibus, praesentium provident ut eveniet repellendus at consequuntur voluptatem, optio aliquid! Enim, provident.</p>
+    </div>
+  </div>
+  <%= link_to("#") do %>
+    <i class="fas fa-heart"></i>
+  <% end %>
+</div>

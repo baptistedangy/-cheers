@@ -1,5 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
+  background: #6a040f;
+  color: white;
   padding: 0px 8px;
   height: 40px;
 }
@@ -20,3 +22,8 @@
     border: 1px solid transparent;
     border-radius: 2px;
 }
+
+.navbar-nav .nav-item {
+  color: white;
+}
+
