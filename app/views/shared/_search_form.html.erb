@@ -1,9 +1,7 @@
 <div class="wrapper">
-<%= form_tag wines_path, method: :get do %>
-  <%= select_tag "search", options_from_collection_for_select(@meals, :name, :name),
-    class: "form-control select2"
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
-
+  <%= form_tag wines_path, method: :get do %>
+    <%= select_tag "search", options_from_collection_for_select(@meals, :name, :name),
+      class: "form-control select2"%>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+  <% end %>
 </div>
