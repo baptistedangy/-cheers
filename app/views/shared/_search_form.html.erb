@@ -1,7 +1,9 @@
 <div class="wrapper">
-  <select class="select2" name="country">
-    <% @meals.each do |meal| %>
-      <option value=<%= meal.id %>><%= meal.name %></option>
-    <% end %>
-  </select>
+<%= form_tag wines_path, method: :get do %>
+  <%= select_tag "search", options_from_collection_for_select(@meals, :name, :name),
+    class: "form-control select2"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+
 </div>
