@@ -111,7 +111,11 @@ puts "creating wines"
 Wine.create(
   name: "Gevrey-Chambertin",
   description: "Les Gevrey Chambertin sont des vins rouges très colorés, alliant puissance et finesse, et dotés d’un excellent potentiel de garde.",
+<<<<<<< HEAD
   price:"> 30",
+=======
+  price:"30+",
+>>>>>>> 506e1ba4a16dab14801a39206c404723aed86e93
   millesime: "2005, 2009, 2015",
   cepage: "pinot noir",
   wine_region: bourgogne,
@@ -120,7 +124,11 @@ Wine.create(
 Wine.create(
   name: "Givry",
   description: "Les Givry sont des vins rouges très colorés, alliant puissance et finesse, et dotés d’un excellent potentiel de garde.",
+<<<<<<< HEAD
   price:"> 30",
+=======
+  price:"30+",
+>>>>>>> 506e1ba4a16dab14801a39206c404723aed86e93
   millesime: "2005, 2009, 2015",
   cepage: "pinot noir",
   wine_region: bourgogne,
@@ -138,7 +146,11 @@ Wine.create(
 Wine.create(
   name: "Corton Charlemagne",
   description: "A Corton Charlemagne Le chardonnay tire de ces différents climats un bouquet équilibré, élégant et des plus délicats, alliant les agrumes, le beurre, la pomme au four, l’ananas, le tilleul, le genévrier, la fougère, la cannelle et le silex. Ce sont des vins amples et gras, qui pour révéler leur finesse et leur complexité, doivent vieillir longtemps.",
+<<<<<<< HEAD
   price:"> 30",
+=======
+  price:"30+",
+>>>>>>> 506e1ba4a16dab14801a39206c404723aed86e93
   millesime: "2005, 2009, 2015",
   cepage: "chardonnay",
   wine_region: bourgogne,
@@ -163,7 +175,11 @@ Wine.create(
 
 Wine.create(
   name: "Médoc", description: "La bouche des Médoc est bien structurée, pleine sur une trame de tannins savoureux. Les vins issus de graves sont puissants et corsés. Ils peuvent être tanniques dans leur jeunesse et gagnent à être attendus 5 à 10 ans.",
+<<<<<<< HEAD
   price:"> 30",
+=======
+  price:"30+",
+>>>>>>> 506e1ba4a16dab14801a39206c404723aed86e93
   millesime: "2016, 2010,2009",
   cepage: "cabernet-sauvignon. merlot. cabernet franc. petit verdot",
   wine_region: bordelais,
@@ -172,7 +188,11 @@ Wine.create(
 Wine.create(
   name: "Saint-Estèphe",
   description: "Les Saint-Estèphe sont caractérisés par leurs côtés charpentés, robustes et solides. La bouche est harmonieuse, puissante et fine, pour donner une finale pleine de distinction et de fraîcheur. En vieillissant, la bouche des Saint-Estèphe s'arrondit.",
+<<<<<<< HEAD
   price:"> 30",
+=======
+  price:"30+",
+>>>>>>> 506e1ba4a16dab14801a39206c404723aed86e93
   millesime: "2016, 2010,2009",
   cepage: "cabernet-sauvignon, merlot, cabernet franc et petit verdot",
   wine_region: bordelais,
@@ -213,3 +233,11 @@ Wine.create(
   cepage: "sauvigon",
   wine_region: loire,
   wine_type: blanc_sec)
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 506e1ba4a16dab14801a39206c404723aed86e93

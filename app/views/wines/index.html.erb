@@ -1,10 +1,13 @@
+
+
 <div class="container">
-<% @wines.each do |wine| %>
+<% @wine_selection.first(3).each do |wine| %>
   <div class="card-product">
     <img src="https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FAFP.2F2018.2F04.2F24.2F0cc984b9-35a3-4786-bbbe-af17b90413d6.2Ejpeg/750x375/background-color/ffffff/quality/70/viticulture-entre-8-et-12-des-vignobles-dans-le-monde-sont-cultives-en-bio-1284685.jpg" />
     <div class="card-product-infos">
-      <h2><%=wine.name%></h2>
-      <p><%=wine.description%></p>
+      <h2><%=link_to(wine.name, wine_path(wine)) %></h2>
+      <p><%=wine.wine_region.name%>, <%=wine.wine_type.name%> </p>
+      <p><%=wine.price%> <i class="fas fa-euro-sign"></i></p>
     </div>
   </div>
 <% end %>

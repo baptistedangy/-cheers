@@ -1,13 +1,18 @@
 <div class="home-banner">
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/assets/home.png');"></div>
-  <div class="home-background" style="background-image: url('/assets/home-background.png');">
-    <div class="container">
-      <h1>Qu'est ce qu'on boit ce soir?</h1>
-      <br>
-      <br>
-      <p>Cheers, l'appli qui va vous faire des amis</p>
+  <div class="banner">
+    <div class="videobg">
+      <video autoplay loop muted>
+      <source src="https://vod-progressive.akamaized.net/exp=1606331450~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1392%2F19%2F481961515%2F2156758648.mp4~hmac=01554e3cb585991f9927926d027ef9ed2c3314704846db7790bc141c64763682/vimeo-prod-skyfire-std-us/01/1392/19/481961515/2156758648.mp4?filename=Wine+-+56914.webm" type="video/webm">
+      <source src="https://vod-progressive.akamaized.net/exp=1606331450~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1392%2F19%2F481961515%2F2156758648.mp4~hmac=01554e3cb585991f9927926d027ef9ed2c3314704846db7790bc141c64763682/vimeo-prod-skyfire-std-us/01/1392/19/481961515/2156758648.mp4?filename=Wine+-+56914.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
-   <%= render "shared/search_form" %>
+  <div class="home-background" style="background-image: url(https://res.cloudinary.com/dsxjc2gud/image/upload/v1606241216/home-background_ylr317.png);">
+    <div class="container">
+      <h1>Qu'est ce qu'on boit ce soir?</h1>
+      <p><strong>Cheers</strong>, l'appli qui va étonner vos amis</p>
+    </div>
+  </div>
+  <%= render "shared/search_form" %>
 </div>
 
