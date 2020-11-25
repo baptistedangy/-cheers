@@ -28,12 +28,35 @@ U3 = User.new(email: "bastien@test.org", password: "lewagon")
 U3.save
 
 puts "creating wine regions"
-bourgogne = WineRegion.create(name: "Bourgogne")
-bordelais = WineRegion.create(name: "Bordelais")
-rhone = WineRegion.create(name: "Vallée du Rhône")
-lanquedoc = WineRegion.create(name: "Languedoc")
-alsace = WineRegion.create(name: "Alsace")
-loire = WineRegion.create(name: "Valée de la Loire")
+file = URI.open("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606305282/forme_bouteille_j1otrc.png")
+bourgogne = WineRegion.new(name: "Bourgogne")
+bourgogne.photo.attach(io: file, filename: "bouteillebourgogne")
+bourgogne.save
+
+file = URI.open("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606314948/bouteillebordeaux_fo1o9p.png")
+bordelais = WineRegion.new(name: "Bordelais")
+bordelais.photo.attach(io: file, filename: "bouteillebordelais")
+bordelais.save
+
+file = URI.open("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606314948/bouteillecdurhone_vg0epj.png")
+rhone = WineRegion.new(name: "Vallée du Rhône")
+rhone.photo.attach(io: file, filename: "bouteillerhone")
+rhone.save
+
+file = URI.open("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606314948/bouteillecdurhone_vg0epj.png")
+lanquedoc = WineRegion.new(name: "Languedoc")
+lanquedoc.photo.attach(io: file, filename: "bouteillelanquedoc")
+lanquedoc.save
+
+file = URI.open("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606314948/bouteille_alsace_r3rw49.png")
+alsace = WineRegion.new(name: "Alsace")
+alsace.photo.attach(io: file, filename: "bouteillealsace")
+alsace.save
+
+file = URI.open("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606314947/bouteillevdeloire_ne0utr.png")
+loire = WineRegion.new(name: "Valée de la Loire")
+loire.photo.attach(io: file, filename: "bouteilleloire")
+loire.save
 
 puts "creating wine types"
 rouge = WineType.create(name: "Rouge")
@@ -190,8 +213,3 @@ Wine.create(
   cepage: "sauvigon",
   wine_region: loire,
   wine_type: blanc_sec)
-
-
-
-
-
