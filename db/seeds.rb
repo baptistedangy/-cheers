@@ -32,7 +32,6 @@ file = URI.open("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606305282/f
 bourgogne = WineRegion.new(name: "Bourgogne")
 bourgogne.photo.attach(io: file, filename: "bouteillebourgogne")
 bourgogne.save
-p"Done"
 
 file = URI.open("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606314948/bouteillebordeaux_fo1o9p.png")
 bordelais = WineRegion.new(name: "Bordelais")
