@@ -1,31 +1,26 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://seeklogo.com/images/W/wine-glass-and-grapes-vintage-logo-9794FE5B8E-seeklogo.com.png" %>
-    <% end %>
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "https://res.cloudinary.com/duf8mmjpl/image/upload/v1606292973/Capture_d_e%CC%81cran_2020-11-25_a%CC%80_09.25.41-removebg-preview_ft3nfu.png" %>
+  <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Dashboard", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Log out",destroy_user_session_path, method: :delete, class: "nav-link" %>
-        </li>
-        <li class="nav-item dropdown">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-
-        </li>
-      <% else %>
-        <li class="nav-item">
+      <li class="nav-item active">
+        <% if !user_signed_in?  %>
           <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
-      <% end %>
+        <% end %>
+      </li>
+      <li>
+        <% if user_signed_in?  %>
+          <li> <%= link_to "Dashboard", wines_path, class: "nav-link mr-3" %> </li>
+          <li> <%= link_to "Log out", destroy_user_session_path, :method => 'delete', class: "nav-link" %> </li>
+        <% end %>
+      </li>
     </ul>
   </div>
 </div>
+
