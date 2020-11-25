@@ -1,5 +1,39 @@
 .wrapper{
-  max-width: 450px;
-  margin: 80px auto;
+  margin: 80px 20px;
+  color: black;
+  height: 50px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
+.search-form-control {
+  position: relative;
+
+  .select2-container {
+  //     box-sizing: border-box;
+  //     display: inline-block;
+  //     margin: 0;
+  //     position: relative;
+  //     vertical-align: middle;
+  //     height: 100px;
+         width: calc(100% - 90px) !important
+  }
+}
+
+.search-form-control .btn {
+  background: rgba(106, 4, 15, 1);
+  border-radius: 4px;
+  height: 30px;
+  margin-left: 4px;
+
+}
+
+.search-form-control .form-control:focus {
+  border: 1px solid #1EDD88;
+  outline: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+#query {
+}
