@@ -1,5 +1,9 @@
 class WinesController < ApplicationController
   def index
+
+    # @search = Meal.where(title: params[:query])
+
+
     search = "Blanquette de Veau"
     # to replace with search result if correct
     @meal = Meal.all.find do |meal|
