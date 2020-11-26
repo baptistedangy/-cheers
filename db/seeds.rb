@@ -206,6 +206,8 @@ Wine.create(
   wine_region: loire,
   wine_type: blanc_sec)
 
+  sancerre = Wine.last
+
 Wine.create(
   name: "Menetou-Salon",
   description: "L’AOC Menetou-Salon est située sur les vignobles de la sous-région Centre-Loire. Moins connues que les AOC Sancerre ou Blanc fumé de Pouilly, l’AOC Menetou-Salon est de produire une meilleure qualité.",
@@ -214,3 +216,15 @@ Wine.create(
   cepage: "sauvigon",
   wine_region: loire,
   wine_type: blanc_sec)
+
+
+puts"User selection"
+
+UserSelection.create(
+  wine: sancerre,
+  user: U3,
+  meal: boeuf
+  )
+
+puts "Done"
+

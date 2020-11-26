@@ -3,6 +3,10 @@
   position: relative;
   top: -460px;
   font-size: 22px;
+
+.fa-bookmark{
+  position: absolute;
+  font-size: 30px;
   color: rgba(106, 4, 15, 0.3);
   transition: .3s;
     &:active{
@@ -10,8 +14,11 @@
     }
 }
 
+.bookmark {
+  padding: 0 200px;
+}
 
-#map {
+#mapfr {
   background-repeat: no-repeat;
   background-size: cover;
 }
