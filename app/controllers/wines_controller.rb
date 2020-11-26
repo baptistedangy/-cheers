@@ -19,10 +19,11 @@ class WinesController < ApplicationController
   def show
     @wine = Wine.find(params[:id])
   end
-
+  
   private
 
   def set_meal
     session[:meal] = params[:query]
   end
+  
 end
