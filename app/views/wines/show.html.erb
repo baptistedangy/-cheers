@@ -1,15 +1,17 @@
 <div class="show-banner">
-    <div id="map"
+    <div id="mapfr"
      style="width: 100%; height: 300px; background-image: url(https://res.cloudinary.com/duf8mmjpl/image/upload/v1606310359/Capture_d_e%CC%81cran_2020-11-25_a%CC%80_14.17.39_qhexwj.png);">
       <div class= "wine-name">
-        <%= link_to("#") do %>
-          <i class="fas fa-heart"></i>
-        <% end %>
         <h1><%= @wine.name %></h1>
         <p><%= image_tag("https://ruedesvignerons-548724.c.cdn77.org/images/front/svg-rounded-flags/fr.svg", size: "15x15", :alt => "rss feed") %> <%= @wine.wine_region.name %></p>
       </div>
     </div>
     <div class="info-vin">
+      <div class="bookmark">
+        <%= button_to wine_user_selections_path(@wine) do %>
+          <i class="fas fa-bookmark"></i>
+        <% end %>
+      </div>
       <table class="tableau my-2">
         <tr>
           <td><%= image_tag("https://i.pinimg.com/originals/af/33/7b/af337bcd43e393429fc7f00e36e5444d.png", size: "25x25") %><br> <%= @wine.millesime %></td>

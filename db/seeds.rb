@@ -97,6 +97,7 @@ Suggestion.create(wine_region: bordelais, wine_type: blanc_liquoreux , main_cate
 puts "creating meals"
 
 Meal.create(name: "Boeuf Bourguignon", main_category: viandes_rouges, cooking_method: sauce)
+boeuf = Meal.last
 Meal.create(name: "Blanquette de Veau", main_category: viandes_blanches, cooking_method: sauce)
 Meal.create(name: "Côte de Boeuf", main_category: viandes_rouges, cooking_method: grille)
 Meal.create(name: "Volaille à la crème", main_category: viandes_blanches, cooking_method: sauce)
@@ -205,6 +206,8 @@ Wine.create(
   wine_region: loire,
   wine_type: blanc_sec)
 
+  sancerre = Wine.last
+
 Wine.create(
   name: "Menetou-Salon",
   description: "L’AOC Menetou-Salon est située sur les vignobles de la sous-région Centre-Loire. Moins connues que les AOC Sancerre ou Blanc fumé de Pouilly, l’AOC Menetou-Salon est de produire une meilleure qualité.",
@@ -213,3 +216,13 @@ Wine.create(
   cepage: "sauvigon",
   wine_region: loire,
   wine_type: blanc_sec)
+
+puts"User selection"
+
+UserSelection.create(
+  wine: sancerre,
+  user: U3,
+  meal: boeuf
+  )
+
+puts "Done"

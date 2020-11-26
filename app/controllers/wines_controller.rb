@@ -1,4 +1,6 @@
 class WinesController < ApplicationController
+  before_action :set_meal, only: :index
+
   def index
     if params[:query].present?
       @meal = Meal.find_by(name: params[:query])
@@ -18,4 +20,9 @@ class WinesController < ApplicationController
     @wine = Wine.find(params[:id])
   end
 
+  private
+
+  def set_meal
+    session[:meal] = params[:query]
+  end
 end
