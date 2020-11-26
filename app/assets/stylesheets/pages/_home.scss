@@ -1,1 +1,121 @@
-// Specific CSS for your home-page
+.home-background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  padding: 6.2rem 1.4rem 14rem;
+  margin-bottom: -140px;
+}
+
+.home-background h1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  opacity: 1.7;
+  font-size: 22px;
+  font-weight: lighter;
+  margin: 8px;
+  text-align: center;
+  color: #10002b;
+  margin: 23px 12px;
+  }
+
+.home-background p {
+  font-size: 20px;
+  color: #10002b;
+  opacity: 1.7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-align: center
+}
+
+.home-explanation {
+  width: 100%;
+  display: block;
+}
+
+.home-explanation h1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  opacity: 1.7;
+  font-size: 22px;
+  font-weight: lighter;
+  margin: 8px;
+  text-align: center;
+  color: #10002b;
+  margin: -5px 12px;
+  color: white;
+  padding-bottom: 16px;
+}
+
+.home-explanation-detail-1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  opacity: 1.7;
+  font-size: 19px;
+  font-weight: lighter;
+  margin: 8px;
+  text-align: center;
+  color: #10002b;
+  margin: 18px 12px;
+  color: white;
+  margin-left: -70px;
+}
+
+.home-explanation-detail-2 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  opacity: 1.7;
+  font-size: 19px;
+  font-weight: lighter;
+  margin: 8px;
+  text-align: center;
+  color: #10002b;
+  margin: 18px 12px;
+  color: white;
+  padding-left: 65px;
+}
+
+.home-explanation-detail-3 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  opacity: 1.7;
+  font-size: 19px;
+  font-weight: lighter;
+  margin: 8px;
+  text-align: center;
+  color: #10002b;
+  margin: 18px 12px;
+  color: white;
+  padding-left: 100px
+}
+
+.home-explanation-detail {
+ background-color: #6a040f;
+ margin-top: 88px
+}
+
+.home-explanation-detail img {
+  width: 65px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px
+}
+
+
+.explanation-bar {
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: unset;
+  z-index: 1;
+  bottom: 3px
+}
+
+.explanation-bar-bis {
+  height: 45px;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  top: unset;
+  z-index: 1;
+  transform: scale(1, -1);
+  top: 1078px;
+  position: absolute;
+}
