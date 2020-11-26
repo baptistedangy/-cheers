@@ -12,18 +12,18 @@
     <div class="info-vin">
       <table class="tableau my-2">
         <tr>
-          <td>Meilleures années: <br> <%= @wine.millesime %></td>
-          <td>Couleur:<br><%= @wine.wine_type.name %></td>
+          <td><%= image_tag("https://i.pinimg.com/originals/af/33/7b/af337bcd43e393429fc7f00e36e5444d.png", size: "25x25") %><br> <%= @wine.millesime %></td>
+          <td> <%= image_tag("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606387170/color_rssrjo.png", size: "25x25") %><br><%= @wine.wine_type.name %></td>
         </tr>
         <tr>
-          <td>Prix: <br><%= @wine.price %></td>
-          <td>Cépages: <br><%= @wine.cepage %></td>
+          <td> <%= image_tag("https://img.icons8.com/ios/452/money-bag-euro.png", size: "25x25") %> <br><%= @wine.price %></td>
+          <td> <%= image_tag("https://img.icons8.com/pastel-glyph/2x/grape--v2.png", size: "25x25") %> <br><%= @wine.cepage %></td>
         </br>
       </table>
     <%= cl_image_tag @wine.wine_region.photo.key, :class => "bouteille" %>
       </div>
       <div class="description">
-        <h3>Description</h3>
+        <h3>Aller plus loin...</h3>
         <p class="my-4"><%= @wine.description %></p>
     </div>
 </div>
