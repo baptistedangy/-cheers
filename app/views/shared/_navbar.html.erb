@@ -16,7 +16,7 @@
       </li>
       <li>
         <% if user_signed_in?  %>
-          <li> <%= link_to "Dashboard", wines_path, class: "nav-link mr-3" %> </li>
+          <li> <%= link_to "Dashboard", user_selections_path, class: "nav-link mr-3" %> </li>
           <li> <%= link_to "Log out", destroy_user_session_path, :method => 'delete', class: "nav-link" %> </li>
         <% end %>
       </li>
