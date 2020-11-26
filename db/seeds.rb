@@ -96,15 +96,15 @@ Suggestion.create(wine_region: bordelais, wine_type: blanc_liquoreux , main_cate
 
 puts "creating meals"
 
-Meal.create(name: "Boeuf Bourguignon", main_category: viandes_rouges, cooking_method: sauce)
-boeuf = Meal.last
-Meal.create(name: "Blanquette de Veau", main_category: viandes_blanches, cooking_method: sauce)
-Meal.create(name: "Côte de Boeuf", main_category: viandes_rouges, cooking_method: grille)
-Meal.create(name: "Volaille à la crème", main_category: viandes_blanches, cooking_method: sauce)
-Meal.create(name: "Plateau de fruits de mer", main_category: poissons, cooking_method: grille)
-Meal.create(name: "Chèvre frais",main_category: fromages , cooking_method: frais)
-Meal.create(name: "Couscous", main_category: viandes_rouges, cooking_method: epice)
-Meal.create(name: "Fondant au chocolat",main_category: desserts , cooking_method: chocolat)
+
+Meal.create(name: "Boeuf Bourguignon", main_category: viandes_rouges, cooking_method: sauce, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/boeuf_bourguignon_t8tnv0.jpg")
+Meal.create(name: "Blanquette de Veau", main_category: viandes_blanches, cooking_method: sauce, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/blanquette_de_veau_d5hdp6.jpg")
+Meal.create(name: "Côte de Boeuf", main_category: viandes_rouges, cooking_method: grille, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/cote_de_boeuf_qmy6t2.jpg")
+Meal.create(name: "Volaille à la crème", main_category: viandes_blanches, cooking_method: sauce, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/volaille_creme_tejw4c.jpg")
+Meal.create(name: "Plateau de fruits de mer", main_category: poissons, cooking_method: grille, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/plateau_fruits_de_mer_uxwoa9.jpg")
+Meal.create(name: "Chèvre frais",main_category: fromages , cooking_method: frais, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/chevre_frais_mgykg5.jpg")
+Meal.create(name: "Couscous", main_category: viandes_rouges, cooking_method: epice, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/couscous_twnxf9.jpg")
+Meal.create(name: "Fondant au chocolat",main_category: desserts , cooking_method: chocolat, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/fondant_au_chocolat_yxbhch.jpg")
 
 
 puts "creating wines"
@@ -217,6 +217,7 @@ Wine.create(
   wine_region: loire,
   wine_type: blanc_sec)
 
+
 puts"User selection"
 
 UserSelection.create(
@@ -226,3 +227,4 @@ UserSelection.create(
   )
 
 puts "Done"
+
