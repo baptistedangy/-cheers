@@ -18,7 +18,7 @@
 };
 
 .box {
-  background-color: #9e2a2b;
+  background-color: #6a040f;
   width: 275px;
   padding: 11px;
   height: 70px;
@@ -53,42 +53,43 @@
   padding: 10px;
 }
 
-.card-product {
-  overflow: hidden;
+.wine-card {
+  //overflow: hidden;
   height: 200px;
   background: rgba(0,0,0,0.8);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-top: 10px;
   width: 180px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 15px;
   color: white;
   margin: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
 }
 
-.card-product h2 {
+.text h2 {
   font-size: 22px;
   font-weight: bold;
   margin: 0;
 }
 
-.card-product p {
-  font-size: 12px;
+.text p {
+  font-size: 18px;
   line-height: 1.4;
-  opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
 }
 
-.link{
+.link {
   text-align: center;
-  background-color: rgba(0,0,0,1);
+  background-color: black;
+  text-decoration: none;
+  margin: 0;
 }
 
-.link p {
-  text-decoration: none;
-}
 
 // /* /* /* .images {
 //   display: flex;
