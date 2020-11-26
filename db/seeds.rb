@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require "open-uri"
+UserSelection.destroy_all
 User.destroy_all
 Meal.destroy_all
 Wine.destroy_all
@@ -15,6 +16,8 @@ WineRegion.destroy_all
 WineType.destroy_all
 MainCategory.destroy_all
 CookingMethod.destroy_all
+UserSelection.destroy_all
+
 
 puts "creating users"
 file = URI.open("https://avatars0.githubusercontent.com/u/61019314?v=4")
@@ -98,6 +101,7 @@ puts "creating meals"
 
 
 Meal.create(name: "Boeuf Bourguignon", main_category: viandes_rouges, cooking_method: sauce, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/boeuf_bourguignon_t8tnv0.jpg")
+boeuf = Meal.last
 Meal.create(name: "Blanquette de Veau", main_category: viandes_blanches, cooking_method: sauce, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/blanquette_de_veau_d5hdp6.jpg")
 Meal.create(name: "Côte de Boeuf", main_category: viandes_rouges, cooking_method: grille, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/cote_de_boeuf_qmy6t2.jpg")
 Meal.create(name: "Volaille à la crème", main_category: viandes_blanches, cooking_method: sauce, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/volaille_creme_tejw4c.jpg")
