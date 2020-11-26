@@ -1,21 +1,74 @@
-.card-product {
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+
+.first {
+  margin-bottom: 20px;
+  margin-top: 20px;
+
 }
 
-.card-product img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
+.wine {
+  display:flex;
+}
+
+.intro h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  width: 275px;
+  padding: 5px;
+  margin-top: 15px;
+};
+
+.box {
+  background-color: #9e2a2b;
+  width: 275px;
+  padding: 11px;
+  height: 70px;
+}
+
+.box h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btl{
+  height: 100px;
+  width: 50px;
+  position: relative;
+}
+
+.btl img {
+  width: 100%;
+  position: absolute;
+  bottom: -4px;
+  left: -14px;
+}
+
+.results {
+  width: 200%;
+  height: 300px;
+  background-image: url(https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FAFP.2F2018.2F04.2F24.2F0cc984b9-35a3-4786-bbbe-af17b90413d6.2Ejpeg/750x375/background-color/ffffff/quality/70/viticulture-entre-8-et-12-des-vignobles-dans-le-monde-sont-cultives-en-bio-1284685.jpg);
+  opacity: 0.5;
+  margin-left: -15px;
+  display: flex;
+  padding: 10px;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 200px;
+  background: rgba(0,0,0,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 10px;
+  width: 180px;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  margin: 50px 20px;
+
 }
 
 .card-product h2 {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
   margin: 0;
 }
@@ -28,7 +81,46 @@
   margin-top: 8px;
 }
 
-.card-product .card-product-infos {
-  padding: 16px;
+.link{
+  text-align: center;
+  background-color: rgba(0,0,0,1);
 }
+
+.link p {
+  text-decoration: none;
+}
+
+// /* /* /* .images {
+//   display: flex;
+// }
+
+// .mealimg {
+//   height: 100px;
+//   //width: 30px;
+//   object-fit: cover;
+// }*/
+// /*
+// .raisins {
+//   height: 100%;
+//   width: 30px;
+//   object-fit: cover;
+// }
+//  */
+
+
+
+// h2 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0;
+// }
+
+// .card-product p {
+//   font-size: 12px;
+//   line-height: 1.4;
+//   opacity: .7;
+//   margin-bottom: 0;
+//   margin-top: 8px;
+// }
+
 

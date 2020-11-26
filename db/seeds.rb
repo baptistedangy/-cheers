@@ -221,7 +221,6 @@ Wine.create(
   wine_region: loire,
   wine_type: blanc_sec)
 
-
 puts"User selection"
 
 UserSelection.create(
