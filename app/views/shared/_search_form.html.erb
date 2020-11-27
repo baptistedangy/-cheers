@@ -2,6 +2,7 @@
   <%= form_tag wines_path, method: :get do %>
     <div class="d-flex justify-content-center search-form-control form-group">
       <label for="id_label_single" class="search-form-control-text">
+        <div><img class="logo" src="https://res.cloudinary.com/dsxjc2gud/image/upload/v1606411305/verredevin_vpxhkt.png"></div>
          À table ! 🍴
           <%= select_tag "query", options_for_select(@meals.map{|meal| [meal.name, meal.name, { "data-photo" => meal.photo }] }),
             class: "form-control select2 meal-templating"%>
