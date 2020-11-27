@@ -2,10 +2,10 @@
   <%= form_tag wines_path, method: :get do %>
     <div class="d-flex justify-content-center search-form-control form-group">
       <label for="id_label_single" class="search-form-control-text">
-         A table ! 🍴
+         À table ! 🍴
           <%= select_tag "query", options_for_select(@meals.map{|meal| [meal.name, meal.name, { "data-photo" => meal.photo }] }),
-            class: "js-example-placeholder-single js-states form-control select2 meal-templating"%>
-          <button name="button" type="submit" class="btn btn-flat">
+            class: "form-control select2 meal-templating"%>
+            <button name="button" type="submit" class="btn btn-flat">
             <i class="fas fa-search"></i>
           </button>
       </label>
@@ -13,7 +13,6 @@
   <% end %>
 </div>
 
-<%#= submit_tag "Search", class: "btn btn-primary" %>
 
 
 

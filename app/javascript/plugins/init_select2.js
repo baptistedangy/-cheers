@@ -15,14 +15,15 @@ const initSelect2 = () => {
     return $meal;
   }
 
+
   $('.select2').select2({
-    templateResult: formatMeal
+    templateResult: formatMeal,
+    placeholder: "Select your meal",
+    allowClear: true
   });
 
-  $(".js-example-placeholder-single").select2({
-      placeholder: "Select your meal",
-      allowClear: true
-  });
+
+
 
 };
 
