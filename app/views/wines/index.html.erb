@@ -15,18 +15,20 @@
       </div>
     </div>
   </div>
+</div>
 
+<div class= "boite">
   <div class="results">
     <% @wine_selection.sample(3).each do |wine| %>
-    <div class="wine-card">
-      <div class="text">
-        <h2><%= image_tag("https://ruedesvignerons-548724.c.cdn77.org/images/front/svg-rounded-flags/fr.svg", size: "25x25", :alt => "rss feed") %>  <%=wine.name.upcase %></h2>
-        <p><%= image_tag("https://img.icons8.com/ios/452/money-bag-euro.png", size: "30x30") %> € <%=wine.price%></p>
+      <div class="wine-card">
+        <div class="text">
+          <h2><%= image_tag("https://ruedesvignerons-548724.c.cdn77.org/images/front/svg-rounded-flags/fr.svg", size: "25x25", :alt => "rss feed") %>  <%=wine.name.upcase %></h2>
+          <p><%= image_tag("https://img.icons8.com/ios/452/money-bag-euro.png", size: "30x30") %><%=wine.price%></p>
+        </div>
+        <div class="link">
+          <%=link_to("VOIR  ", wine_path(wine)) %> <i class="fas fa-eye"></i>
+        </div>
       </div>
-      <div class="link">
-        <%=link_to("VOIR", wine_path(wine)) %>
-      </div>
-    </div>
-  <% end %>
+    <% end %>
   </div>
 </div>
