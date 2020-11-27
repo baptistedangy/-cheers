@@ -9,11 +9,11 @@
 <% @user_selections.order("created_at desc").each do |user| %>
     <%= link_to wine_path(user.wine) do %>
   <div class="card-product my-3">
-    <img src="https://images.unsplash.com/photo-1599989317399-2a6e074c6555?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fHZpbmV5YXJkfGVufDB8fDB8&auto=format&fit=crop&w=500&q=60" />
+      <%= cl_image_tag user.meal.photo %>
     <div class="card-product-infos">
       <h2 class="linktoshow"><%= user.wine.name %></h2>
-      <p class="linktoshow"><%= user.wine.price %> €</p>
-      <p class="linktoshow"><%= user.wine.wine_region.name %></p>
+      <p class="linktoshow"><%= user.wine.price %></p>
+      <p class="linktoshow"><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
     </div>
   </div>
   <% end %>
