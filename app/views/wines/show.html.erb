@@ -10,11 +10,6 @@
       </div>
     </div>
     <div class="info-vin">
-      <div class="bookmark">
-        <%= button_to wine_user_selections_path(@wine) do %>
-          <i class="fas fa-bookmark"></i>
-        <% end %>
-      </div>
       <table class="tableau my-2">
         <tr>
           <td><%= image_tag("https://i.pinimg.com/originals/af/33/7b/af337bcd43e393429fc7f00e36e5444d.png", size: "25x25") %><br> <%= @wine.millesime %></td>
@@ -28,7 +23,13 @@
     <%= cl_image_tag @wine.wine_region.photo.key, :class => "bouteille" %>
       </div>
       <div class="description">
-        <h3>Aller plus loin...</h3>
+        <h3 id="plusloin">Aller plus loin...</h3>
         <p class="my-4"><%= @wine.description %></p>
     </div>
+
+  <div class="bookmark">
+        <%= button_to wine_user_selections_path(@wine), class: 'select'  do %>
+          <p>Selectionne moi !!</p>
+        <% end %>
+      </div>
 </div>
