@@ -19,6 +19,10 @@ const initSelect2 = () => {
     templateResult: formatMeal
   });
 
+  $(".js-example-placeholder-single").select2({
+      placeholder: "Select your meal",
+      allowClear: true
+  });
 
 };
 
