@@ -12,11 +12,7 @@
         <h2><%= @suggestion.wine_type.name.upcase %> </h2>
       </div>
       <div class="btl">
-
-        <% if @suggestion.wine_region.photo.attached? %>
-            <%= cl_image_tag @suggestion.wine_region.photo.key%>
-            <% end %>
-          <% end%>
+        <%= cl_image_tag @suggestion.wine_region.photo.key%>
       </div>
     </div>
   </div>
