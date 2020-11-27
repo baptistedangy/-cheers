@@ -7,11 +7,19 @@
   justify-content: center;
 }
 
+.logo {
+  width: 68px;
+  margin-left: 119px;
+  margin-bottom: 32px;
+  height: 57px;
+}
+
+
 .search-form-control {
   position: relative;
-  margin: -18px;
-  top: -46px;
-  margin-left: 21px;
+  margin: -46px;
+  top: -136px;
+  margin-left: -18px;
 
   .select2-container {
     width: calc(100% - 40px) !important
