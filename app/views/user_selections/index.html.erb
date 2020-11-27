@@ -5,17 +5,17 @@
     <h1>Ma selection</h1>
   </div>
 </div>
-
-<% @user_selections.order("created_at desc").each do |user| %>
+<div class="container">
+  <% @user_selections.order("created_at desc").each do |user| %>
     <%= link_to wine_path(user.wine) do %>
-  <div class="card-product my-3">
+    <div class="card-product my-3">
       <%= cl_image_tag user.meal.photo %>
-    <div class="card-product-infos">
-      <h2 class="linktoshow"><%= user.wine.name %></h2>
-      <p class="linktoshow"><%= user.wine.price %></p>
-      <p class="linktoshow"><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
-    </div>
-  </div>
+        <div class="card-product-infos">
+          <h2 class="linktoshow"><%= user.wine.name %></h2>
+          <p class="linktoshow"><%= user.wine.price %></p>
+          <p class="linktoshow"><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
+        </div>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
-
+</div>
