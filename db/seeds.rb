@@ -125,7 +125,7 @@ Wine.create(
 Wine.create(
   name: "Givry",
   description: "Les Givry sont des vins rouges très colorés, alliant puissance et finesse, et dotés d’un excellent potentiel de garde.",
-  price:"30€ et +",
+  price:"De 20€ à 30€",
   millesime: "2005, 2009, 2015",
   cepage: "pinot noir",
   wine_region: bourgogne,
@@ -153,7 +153,7 @@ Wine.create(
   name: "Pernand-Vergelesses",
   description: "Les Pernand-Vergelesses blancs représentent plus de 40 % de cette appellation. Ils développent agréablement les caractéristiques du chardonnay à travers des arômes de fleurs blanches, et avec l’âge, d’ambre et de miel.",
   price:"De 20€ à 30€",
-  millesime: "2005, 2009,2015",
+  millesime: "2005, 2009, 2015",
   cepage: "chardonnay",
   wine_region: bourgogne,
   wine_type: blanc_sec)
@@ -161,7 +161,7 @@ Wine.create(
 Wine.create(
   name: "Rully", description: "Les Rully blancs sont, dans leur jeunesse, parés d’une robe dorée à reflets verts et offrent d’excellents arômes de fleurs de haies (acacia, chèvrefeuille, aubépine, etc.), de citron, de pêche blanche, ainsi que la minéralité du silex. En vieillissant, leur robe évolue vers le bouton d’or et ils acquièrent des notes de miel, de coing et de fruits secs.",
   price:"De 10€ à 20€",
-  millesime: "2005, 2009,2015",
+  millesime: "2005, 2009, 2015",
   cepage: "chardonnay",
   wine_region: bourgogne,
   wine_type: blanc_sec)
@@ -169,7 +169,7 @@ Wine.create(
 Wine.create(
   name: "Médoc", description: "La bouche des Médoc est bien structurée, pleine sur une trame de tannins savoureux. Les vins issus de graves sont puissants et corsés. Ils peuvent être tanniques dans leur jeunesse et gagnent à être attendus 5 à 10 ans.",
   price:"30€ et +",
-  millesime: "2016, 2010,2009",
+  millesime: "2016, 2010, 2009",
   cepage: "cabernet-sauvignon. merlot. cabernet franc. petit verdot",
   wine_region: bordelais,
   wine_type: rouge)
@@ -178,7 +178,7 @@ Wine.create(
   name: "Saint-Estèphe",
   description: "Les Saint-Estèphe sont caractérisés par leurs côtés charpentés, robustes et solides. La bouche est harmonieuse, puissante et fine, pour donner une finale pleine de distinction et de fraîcheur. En vieillissant, la bouche des Saint-Estèphe s'arrondit.",
   price:"30€ et +",
-  millesime: "2016, 2010,2009",
+  millesime: "2016, 2010, 2009",
   cepage: "cabernet-sauvignon, merlot, cabernet franc et petit verdot",
   wine_region: bordelais,
   wine_type: rouge)
@@ -187,7 +187,7 @@ Wine.create(
   name: "Pauillac",
   description: "La bouche des Pauillac est ample, riche, onctueuse, soulignée par une fine trame de tannins serrés et corsés. Le vieillissement de ces vins est exceptionnel : ils ont un grand potentiel de garde, de 15 à 25 ans voir plus pour certains grands crus. Avec les années, les tannins s’arrondissent et les arômes s’ouvrent. Ils perdent ainsi leur agressivité pour devenir fins et délicats, tout en conservant leur puissance.",
   price:"De 20€ à 30€",
-  millesime: "2016, 2010,2009",
+  millesime: "2016, 2010, 2009",
   cepage: "cabernet-sauvignon. merlot. cabernet franc. petit verdot",
   wine_region: bordelais,
   wine_type: rouge)
@@ -196,7 +196,7 @@ Wine.create(
   name: "Muscadet",
   description: "Muscadet un vin complexe, gras et avec un beau volume en bouche. Les arômes d’agrumes (citron) frais et nerveux en bouche et savent s’accorder parfaitement avec les crustacés et fruits de mer locaux.",
   price:"De 10€ à 20€",
-  millesime: "2016, 2010,2009",
+  millesime: "2016, 2010, 2009",
   cepage: "melon de Bourgogne",
   wine_region: loire,
   wine_type: blanc_sec)
@@ -205,7 +205,7 @@ Wine.create(
   name: "Sancerre",
   description: "Les vins de l’AOC Sancerre présentent une diversité importante reflétant la grande variété des types de sols accueillant les vignes. Les vins des terres blanches se développent avec l’âge mais offrent dès leur jeunesse des arômes opulents.",
   price:"De 20€ à 30€",
-  millesime: "2016, 2010,2009",
+  millesime: "2016, 2010, 2009",
   cepage: "sauvignon",
   wine_region: loire,
   wine_type: blanc_sec)
@@ -216,7 +216,7 @@ Wine.create(
   name: "Menetou-Salon",
   description: "L’AOC Menetou-Salon est située sur les vignobles de la sous-région Centre-Loire. Moins connues que les AOC Sancerre ou Blanc fumé de Pouilly, l’AOC Menetou-Salon est de produire une meilleure qualité.",
   price:"De 20€ à 30€",
-  millesime: "2016, 2010,2009",
+  millesime: "2016, 2010, 2009",
   cepage: "sauvigon",
   wine_region: loire,
   wine_type: blanc_sec)
