@@ -26,7 +26,7 @@
 
 .bouteille {
   position: absolute;
-  top: 240px;
+  top: 215px;
   right: 25px;
   width: 80px;
 }
@@ -79,4 +79,11 @@ td {
 }
 .flag {
   display: inline-flex
+}
+
+.fa-angle-left {
+  text-decoration: none;
+  color:white;
+  font-size:35px;
+  margin: 10px;
 }
