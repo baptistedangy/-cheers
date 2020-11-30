@@ -47,8 +47,14 @@ a:hover {
 
 .align-items-end {
   align-items: flex-end !important;
-  padding-top: 145px;
-  margin-left: 10px;
+  padding-top: 134px;
+  margin-left: 14px;
+}
+
+.align-items-start {
+  align-items: flex-start !important;
+  margin-top: -68px;
+  margin-left: 15px;
 }
 
 .home-explanation h1 {
