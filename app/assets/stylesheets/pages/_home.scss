@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth
+}
+
 .home-background {
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 75%;
-  padding: 100px 0px;
+  padding: 80px 0px;
+  margin-bottom: 60px
 }
 
 .home-background h1 {
@@ -25,6 +30,29 @@
   position: relative
 }
 
+#lorem {
+  margin-top: 65px;
+  color: #6a040f;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #6a040f;
+  font-size: 2em;
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  color: #10002b !important;
+}
+
+
+.align-items-end {
+  align-items: flex-end !important;
+  padding-top: 145px;
+  margin-left: 10px;
+}
+
 .home-explanation h1 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   font-size: 22px;
@@ -34,19 +62,41 @@
   color: #10002b;
   color: white;
   padding-bottom: 16px;
-}
-
-.home-explanation-detail-1, .home-explanation-detail-2, .home-explanation-detail-3  {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  font-size: 19px;
-  font-weight: lighter;
-  text-align: center;
-  color: white;
+  margin-top: 13px;
 }
 
 .home-explanation-detail {
   background-color: #6a040f;
   text-align: center;
+  height: 310px;
+}
+
+.home-explanation-detail-1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 19px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+  margin-left: -60px;
+  margin-top: 16px;
+}
+
+.home-explanation-detail-2 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 19px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+  margin-left: 90px
+}
+
+.home-explanation-detail-3  {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 19px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+  margin-left: 115px
 }
 
 .home-explanation-detail img {
@@ -55,7 +105,6 @@
   margin-right: auto;
   margin-bottom: 16px
 }
-
 
 .explanation-bar {
   height: 45px;
