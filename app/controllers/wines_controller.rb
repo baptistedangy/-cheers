@@ -18,12 +18,15 @@ class WinesController < ApplicationController
 
   def show
     @wine = Wine.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json { render json: { html: render_to_string(partial: "wine-show", formats: :html) } }
+    end
   end
-  
+
   private
 
   def set_meal
     session[:meal] = params[:query]
   end
-  
 end

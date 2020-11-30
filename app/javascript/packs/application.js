@@ -29,10 +29,19 @@ import "bootstrap";
 import { initMapbox } from '../plugins/init_mapbox';
 // import { initSelect2 } from '../components/init_select2';
 import { initSelect2 } from '../plugins/init_select2';
+import { insertShow } from '../components/insert_show';
+// window.transitionToPage = function(href) {
+//     document.querySelector('body').style.transform = "translate(0px, -100vh)"
+//     setTimeout(function() {
+//         window.location.href = href
+//     }, 500)
+// }
+
+
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
   initSelect2();
   initMapbox();
+  insertShow();
 })
 
