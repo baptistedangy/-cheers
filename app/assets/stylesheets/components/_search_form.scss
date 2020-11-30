@@ -14,11 +14,11 @@
 .fa-search {
   border-radius: 50% !important;
   bottom: 10px !important;
-  padding: 8px !important;
+  padding: 7px !important;
   background: #6a040f !important;
   color: white !important;
-  font-size: 21px !important;
-  margin-left: -33px !important;
+  font-size: 23px !important;
+  margin-left: -35px !important;
   position: absolute !important;
 }
 
@@ -76,11 +76,11 @@
 
 .select2-container--open .select2-dropdown--below {
   border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
   width: 360px !important;
   border-radius: 4%;
   padding: 8px;
+  border-top-left-radius: 4% !important;
+  border-top-right-radius: 4% !important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
