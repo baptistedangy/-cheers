@@ -1,38 +1,38 @@
 <div class="show-banner">
-     <div id="mapfr"
-      style="width: 100%; height: 300px; background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/duf8mmjpl/image/upload/v1606310359/Capture_d_e%CC%81cran_2020-11-25_a%CC%80_14.17.39_qhexwj.png);">
-       <%= link_to :back do %>
-           <i class="fas fa-angle-left"></i>
-         <% end %>
-       <div class= "wine-name">
-         <h1 class="whitetext"><%= @wine.name %></h1>
-         <div class="flag">
-           <p class="mr-2"><%= image_tag("https://ruedesvignerons-548724.c.cdn77.org/images/front/svg-rounded-flags/fr.svg", size: "15x15", :alt => "rss feed") %></p>
-           <p class="whitetext region"><%= @wine.wine_region.name %></p>
-         </div>
+   <div id="mapfr"
+    style="width: 100%; height: 300px; background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/duf8mmjpl/image/upload/v1606310359/Capture_d_e%CC%81cran_2020-11-25_a%CC%80_14.17.39_qhexwj.png);">
+     <%= link_to :back do %>
+         <i class="fas fa-angle-left"></i>
+       <% end %>
+     <div class= "wine-name">
+       <h1 class="whitetext"><%= @wine.name %></h1>
+       <div class="flag">
+         <p class="mr-2"><%= image_tag("https://ruedesvignerons-548724.c.cdn77.org/images/front/svg-rounded-flags/fr.svg", size: "15x15", :alt => "rss feed") %></p>
+         <p class="whitetext region"><%= @wine.wine_region.name %></p>
        </div>
      </div>
-     <div class="info-vin">
-       <table class="tableau my-2">
-         <tr>
-           <td><%= image_tag("https://i.pinimg.com/originals/af/33/7b/af337bcd43e393429fc7f00e36e5444d.png", size: "25x25") %><br> <%= @wine.millesime %></td>
-           <td> <%= image_tag("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606387170/color_rssrjo.png", size: "25x25") %><br><%= @wine.wine_type.name %></td>
-         </tr>
-         <tr>
-           <td> <%= image_tag("https://img.icons8.com/ios/452/money-bag-euro.png", size: "25x25") %> <br><%= @wine.price %></td>
-           <td> <%= image_tag("https://img.icons8.com/pastel-glyph/2x/grape--v2.png", size: "25x25") %> <br><%= @wine.cepage %></td>
-         </br>
-       </table>
-     <%= cl_image_tag @wine.wine_region.photo.key, :class => "bouteille" %>
-       </div>
-       <div class="description mb-4">
-         <h3 id="plusloin">Aller plus loin...</h3>
-         <p class="my-4"><%= @wine.description %></p>
+   </div>
+   <div class="info-vin">
+     <table class="tableau my-2">
+       <tr>
+         <td><%= image_tag("https://i.pinimg.com/originals/af/33/7b/af337bcd43e393429fc7f00e36e5444d.png", size: "25x25") %><br> <%= @wine.millesime %></td>
+         <td> <%= image_tag("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606387170/color_rssrjo.png", size: "25x25") %><br><%= @wine.wine_type.name %></td>
+       </tr>
+       <tr>
+         <td> <%= image_tag("https://img.icons8.com/ios/452/money-bag-euro.png", size: "25x25") %> <br><%= @wine.price %></td>
+         <td> <%= image_tag("https://img.icons8.com/pastel-glyph/2x/grape--v2.png", size: "25x25") %> <br><%= @wine.cepage %></td>
+       </br>
+     </table>
+   <%= cl_image_tag @wine.wine_region.photo.key, :class => "bouteille" %>
      </div>
+     <div class="description mb-4">
+       <h3 id="plusloin">Aller plus loin...</h3>
+       <p class="my-4"><%= @wine.description %></p>
+   </div>
 
-   <div class="bookmark">
-         <%= button_to wine_user_selections_path(@wine), class: 'select'  do %>
-           <p class="Selectme">SAUVEGARDER</p>
-         <% end %>
-       </div>
- </div>
+  <div class="bookmark">
+       <%= button_to wine_user_selections_path(@wine), class: 'select'  do %>
+         <p class="Selectme">SAUVEGARDER</p>
+       <% end %>
+  </div>
+</div>
