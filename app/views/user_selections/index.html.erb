@@ -14,6 +14,18 @@
           <h2 class="linktoshow"><%= user.wine.name %></h2>
           <p class="linktoshow"><%= user.wine.price %></p>
           <p class="linktoshow"><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
+          <p>
+            <% if user.rating %>
+              <% user.rating.note.times do %>
+                <i class="fas fa-star"></i>
+              <% end %>
+              <% (5 - user.rating.note).times do %>
+                <i class="far fa-star"></i>
+              <% end %>
+            <% else %>
+              <%= link_to "Add rate", new_user_selection_rating_path(user) %>
+            <% end %>
+          </p>
         </div>
       </div>
     <% end %>

@@ -8,7 +8,7 @@
 }
 
 .card-product img {
-  height: 100%;
+  height: 120px;
   width: 120px;
   object-fit: cover;
 }
@@ -33,4 +33,8 @@
 .linktoshow {
   text-decoration: none;
   color: black;
+}
+
+.fa-star {
+  color: #FFC600;
 }

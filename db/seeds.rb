@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require "open-uri"
+Rating.destroy_all
 UserSelection.destroy_all
 User.destroy_all
 Meal.destroy_all
@@ -228,6 +229,7 @@ UserSelection.create(
   user: U3,
   meal: boeuf
   )
+
 
 puts "Done"
 
