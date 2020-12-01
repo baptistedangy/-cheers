@@ -1,4 +1,8 @@
 
+.container {
+  height: 335px;
+}
+
 
 .first {
   margin-bottom: 40px;
@@ -7,12 +11,12 @@
 
 .wine {
   display:flex;
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .intro h2 {
   font-size: 20px;
-  width: 300px;
+  width: 340px;
   padding: 5px;
 };
 
@@ -21,6 +25,8 @@
   width: 325px;
   padding: 18px;
   height: 90px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .box h2 {
@@ -44,14 +50,12 @@
 
 .boite{
   overflow: hidden;
+  background: #10002b;
+  // background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FAFP.2F2018.2F04.2F24.2F0cc984b9-35a3-4786-bbbe-af17b90413d6.2Ejpeg/750x375/background-color/ffffff/quality/70/viticulture-entre-8-et-12-des-vignobles-dans-le-monde-sont-cultives-en-bio-1284685.jpg); */
+  height: 301px;
+
 }
 
-// .results::-webkit-scrollbar{
-//   width: 5px;
-//   height: 8px;
-//   background-color: #6a040f;
-// }
-/* Let's get this party started */
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -67,33 +71,35 @@
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #6a040f;
+    background: #10002b;
     -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(255,0,0,0.4);
+  background: #10002b;
 }
 
 .results {
   height: 300px;
-  background-image:  linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url(https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FAFP.2F2018.2F04.2F24.2F0cc984b9-35a3-4786-bbbe-af17b90413d6.2Ejpeg/750x375/background-color/ffffff/quality/70/viticulture-entre-8-et-12-des-vignobles-dans-le-monde-sont-cultives-en-bio-1284685.jpg);
+  //background-image:  linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url(https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FAFP.2F2018.2F04.2F24.2F0cc984b9-35a3-4786-bbbe-af17b90413d6.2Ejpeg/750x375/background-color/ffffff/quality/70/viticulture-entre-8-et-12-des-vignobles-dans-le-monde-sont-cultives-en-bio-1284685.jpg);
   display: grid;
-  padding: 50px 10px;
+  padding: 10px 10px;
   background-size: cover;
-  grid-template-columns: 180px 180px 180px;
+  grid-template-columns: 190px 190px 190px;
   grid-gap: 1rem;
   overflow: auto;
   width: 100%;
+  margin-top: -73px;
+  position: absolute;
 }
 
 .wine-card {
   overflow: hidden;
   height: 200px;
-  background: #7f9183;
+  background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 180px;
   border-radius: 20px;
-  color: white;
+  color: #6a040f;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -124,7 +130,7 @@
 .link {
   text-align: center;
   padding: 5px;
-  background-color:rgb(69,79,77);
+  background-color:lightgrey;
   text-decoration: none;
   height: 35px;
 
