@@ -2,6 +2,7 @@ class UserSelectionsController < ApplicationController
 
   def index
     @user_selections = UserSelection.where(:user_id => current_user.id)
+    @rating = Rating.new(rating_params)
   end
 
   def dashboard
@@ -32,6 +33,10 @@ class UserSelectionsController < ApplicationController
 
 
   private
+
+  def rating_params
+    params.permit(:comment, :note)
+  end
 
   def user_selection_params
     params.permit(:meal_id, :wine_id)
