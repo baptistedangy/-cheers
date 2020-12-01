@@ -1,3 +1,5 @@
+import { initStarRating } from '../plugins/init_star_rating';
+
 const insertRate = () => {
   const ratingLinks = document.querySelectorAll('.rate-card-link');
   ratingLinks.forEach((link) => {
@@ -11,6 +13,8 @@ const insertRate = () => {
       .then((data) => {
         const container = document.getElementById('rate-show-container');
         container.innerHTML = data.html;
+      console.log("ici");
+      initStarRating();
       })
     })
   });

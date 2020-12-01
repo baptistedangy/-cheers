@@ -26,7 +26,6 @@ require("channels")
 import "bootstrap";
 
 // Internal imports, e.g:
-import { initStarRating } from '../plugins/init_star_rating';
 import { showStarRating } from '../plugins/init_star_rating';
 
 
@@ -48,8 +47,7 @@ import { insertRate } from '../components/insert_rate';
 document.addEventListener('turbolinks:load', () => {
   initSelect2();
   initMapbox();
-  initStarRating();
-  showStarRating();
+  // initStarRating();
   insertShow();
   insertRate();
 })
