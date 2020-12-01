@@ -2,9 +2,6 @@
   justify-content: space-between;
   background: white;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  z-index: 500;
   box-shadow: 0px 0px 2px grey;
 }
 
@@ -21,9 +18,7 @@
   color: black;
 }
 
-body {
-  padding-bottom: 110px;
-}
+
 .nav-link img {
   opacity: 0.7;
 }

@@ -1,0 +1,9 @@
+.main-wraper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wraper-content {
+  flex-grow: 1;
+}

@@ -16,6 +16,11 @@
 
   <body>
     <%= render 'shared/flashes' %>
-    <%= yield %>
+    <div class="main-wraper">
+      <div class="main-wraper-content">
+        <%= yield %>
+      </div>
+      <%= render 'shared/navbar' if params[:action] != "home" %>
+    </div>
   </body>
 </html>
