@@ -2,6 +2,10 @@ class RatingsController < ApplicationController
 
   def new
     @rating = Rating.new
+    respond_to do |format|
+      format.html
+      format.json { render json: { html: render_to_string(partial: "rating-new", formats: :html) } }
+    end
   end
 
   def create

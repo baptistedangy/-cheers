@@ -28,7 +28,7 @@
 }
 
 .card-product .card-product-infos {
-  padding: 16px;
+  padding: 25px;
 }
 .linktoshow {
   text-decoration: none;
@@ -57,4 +57,9 @@
     text-decoration: none;
     color: black;
   }
+}
+
+.card-product-infos a {
+  font-size: 15px;
+  color: #6a040f;
 }
