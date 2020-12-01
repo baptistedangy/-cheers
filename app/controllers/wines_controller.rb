@@ -3,6 +3,7 @@ class WinesController < ApplicationController
 
   def index
     if params[:query].present?
+      @meals = Meal.all
       @meal = Meal.find_by(name: params[:query])
       @wines = Wine.all
       @suggestion = Suggestion.all.find do |suggestion|
