@@ -1,13 +1,13 @@
 
 
-<div class="bannerdash" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.theconversation.com/files/67872/original/image-20141221-31560-ogavyx.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop);">
+<div class="bannerdash">
   <div class="container">
     <h1>Ma selection</h1>
   </div>
 </div>
 <div class="container">
   <% @user_selections.order("created_at desc").each do |user| %>
-    <p class="date">Repas du <%= user.created_at.strftime("%e %b") %> </p>
+    <p class="date">Repas du <%= user.created_at.strftime("%e %b") %>: <strong><%=user.meal.name  %></strong></p>
       <%= link_to user_selection_path(user), :method => 'delete', class: "cc", data: {confirm: "Are you sure?"} do %>
         <p>+</p>
       <% end %>
@@ -15,9 +15,9 @@
     <div class="card-product mb-3">
       <%= cl_image_tag user.meal.photo %>
         <div class="card-product-infos">
-          <p class="linktoshow">Tu as choisi un <strong> <%= user.wine.name %> </strong> </p>
-          <p class="linktoshow"><%= user.wine.price %></p>
-          <p class="linktoshow"><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
+          <p class="linktoshow"><strong><%= user.wine.name %></strong></p>
+          <p class="linktoshow"><%= image_tag("https://img.icons8.com/ios/452/money-bag-euro.png", size: "25x25") %><%= user.wine.price %></p>
+          <p class="linktoshow"><%= image_tag("https://img.icons8.com/pastel-glyph/2x/grape--v2.png", size: "25x25") %><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
           <p>
             <% if user.rating %>
               <% user.rating.note.times do %>
@@ -27,7 +27,9 @@
                 <i class="far fa-star"></i>
               <% end %>
             <% else %>
-              <%= link_to "Donne nous ton avis", new_user_selection_rating_path(user), class: "rate-card-link" %>
+              <%= link_to new_user_selection_rating_path(user), class: "rate-card-link" do %>
+              <i class="fas fa-plus"></i> Noter
+              <% end %>
             <% end %>
           </p>
         </div>

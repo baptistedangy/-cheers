@@ -1,15 +1,16 @@
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 150px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  border-radius: 7px
 }
 
 .card-product img {
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 130px;
   object-fit: cover;
 }
 
@@ -20,7 +21,7 @@
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -32,7 +33,7 @@
 }
 .linktoshow {
   text-decoration: none;
-  color: black;
+  color: #10002b;
 }
 
 .fa-star {
@@ -40,10 +41,11 @@
 }
 
 .date {
-  margin: 25px 0px 0px !important;
+  margin: 25px 0px 3px !important;
   opacity: 0.5;
   font-style: italic;
   position: relative;
+  color: #6a040f;
 }
 
 .cc {
@@ -63,4 +65,17 @@
 .card-product-infos a {
   font-size: 15px;
   color: #6a040f;
+}
+
+.linktoshow img {
+  height: 23px;
+  width: 23px
+}
+
+.linktoshow strong {
+  font-size: 17px
+}
+
+a.rate-card-link {
+  text-decoration: none
 }

@@ -1,7 +1,7 @@
-  <p class="mt-5 text-center">Qu'as tu pensez de ce vin ?</p>
+  <p class="mt-5 text-center">Qu'as tu pensé de ce vin ?</p>
   <div class="text-center mt-5">
       <%= simple_form_for @rating, url: user_selection_ratings_path do |f| %>
-        <%= f.input :note, collection: (1..5).to_a, id: 'etoile' %>
+        <%= f.input :note, collection: (1..5).to_a, id: 'etoile', label: false %>
         <%= f.button :submit, id: 'submit-button' %>
       <% end %>
   </div>
