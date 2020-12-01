@@ -35,3 +35,25 @@ body {
   text-align: center;
 }
 
+.thenav {
+  height: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link .fa-heart {
+  color: #495057!important;
+  font-size: 0.9em;
+}
+
+.nav-link .fa-heart:hover {
+  color:#6a040f!important;
+}
+
+.logout {
+  transform: rotateY(180deg)!important;
+  padding-left: 0px;
+  padding-bottom: 10px;
+}
