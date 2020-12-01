@@ -1,14 +1,26 @@
-.search-meal{
-  padding-top: 366px;
+.search-container{
+  height: 100%;
+  padding-top: 280px;
   color: white;
+  background-image: url(/assets/grid.png);
 }
 
 .logo {
-  width: 39px;
-  margin-bottom: 15px;
-  height: 60px;
+  width: 150px;
+  margin-bottom: -11px;
+  height: 100px;
 }
 
+.fa-search {
+  border-radius: 50% !important;
+  bottom: 12px !important;
+  padding: 7px !important;
+  background: #6a040f !important;
+  color: white !important;
+  font-size: 20px !important;
+  margin-left: -35px !important;
+  position: absolute !important;
+}
 
 .search-form-control {
   position: relative;
@@ -19,6 +31,13 @@
   .select2-container {
     width: calc(100% - 40px) !important
   }
+}
+
+.search-form-control-text p {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  margin-top: 0.9em;
+  font-size: 1.3em;
 }
 
 .search-form-control .btn {
@@ -46,13 +65,33 @@
   overflow-y: auto;
 }
 
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  padding: 6px 4px;
+  height: auto !important;
+  border-radius: 41px !important;
+  width: 360px;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border-top: none;
+  width: 360px !important;
+  border-radius: 4%;
+  padding: 8px;
+  border-top-left-radius: 4% !important;
+  border-top-right-radius: 4% !important;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #444;
   line-height: 28px;
-  width: 300px;
+  padding-right: 155px !important;
 }
 
 .select2-results__option {
   padding: 10px;
   -webkit-user-select: none;
 }
+
+

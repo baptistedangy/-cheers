@@ -2,15 +2,16 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  margin-left: -110px;
+  margin-left: -132px;
 }
 
 .videobg {
-  height: 101vh;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, -0.8), rgba(0, 0, 0, 0.2));
-  padding-left: 110px;
+  padding-left: 132px;
+  background:url('images/grid.png');
 }
 
 video {
@@ -21,6 +22,7 @@ video {
   height: 100%;
   z-index: -1;
   object-fit: cover;
+  object-position: 50%;
 }
 
 

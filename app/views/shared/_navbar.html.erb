@@ -2,25 +2,20 @@
   <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag "https://res.cloudinary.com/duf8mmjpl/image/upload/v1606292973/Capture_d_e%CC%81cran_2020-11-25_a%CC%80_09.25.41-removebg-preview_ft3nfu.png" %>
   <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <% if !user_signed_in?  %>
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        <% end %>
-      </li>
-      <li>
-        <% if user_signed_in?  %>
-          <li> <%= link_to "Dashboard", user_selections_path, class: "nav-link mr-3" %> </li>
-          <li> <%= link_to "Log out", destroy_user_session_path, :method => 'delete', class: "nav-link" %> </li>
-        <% end %>
-      </li>
-    </ul>
-  </div>
-</div>
+    <% if !user_signed_in?  %>
+        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      <% end %>
+    <% if user_signed_in?  %>
+        <div>
+          <%= link_to user_selections_path, class: "nav-link homepage mr-4" do %>
+            <%= image_tag "https://icons-for-free.com/iconfiles/png/512/heart-131965017458786724.png", size: "40x40" %>
+          <% end %>
+        </div>
+        <div>
+          <%= link_to destroy_user_session_path, :method => 'delete', class: "nav-link" do %>
+            <%= image_tag "https://static.thenounproject.com/png/30459-200.png", size: "30x30" %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
 

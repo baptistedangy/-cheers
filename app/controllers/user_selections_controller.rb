@@ -29,8 +29,8 @@ class UserSelectionsController < ApplicationController
     else
       render :new
     end
-
   end
+
 
   private
 

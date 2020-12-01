@@ -7,11 +7,15 @@
 </div>
 <div class="container">
   <% @user_selections.order("created_at desc").each do |user| %>
+    <p class="date">Repas du <%= user.created_at.strftime("%e %b") %> </p>
+      <%= link_to user_selection_path(user), :method => 'delete', class: "cc", data: {confirm: "Are you sure?"} do %>
+        <p>+</p>
+      <% end %>
     <%= link_to wine_path(user.wine) do %>
-    <div class="card-product my-3">
+    <div class="card-product mb-3">
       <%= cl_image_tag user.meal.photo %>
         <div class="card-product-infos">
-          <h2 class="linktoshow"><%= user.wine.name %></h2>
+          <p class="linktoshow">Tu as choisi un <strong> <%= user.wine.name %> </strong> </p>
           <p class="linktoshow"><%= user.wine.price %></p>
           <p class="linktoshow"><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
           <p>

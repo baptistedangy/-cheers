@@ -14,6 +14,7 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 70px;
+  margin: 0 !important ;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -23,3 +24,14 @@
 body {
   padding-bottom: 110px;
 }
+.nav-link img {
+  opacity: 0.7;
+}
+
+.explication {
+  display: block;
+  opacity: 0.5;
+  font-size: 9px;
+  text-align: center;
+}
+
