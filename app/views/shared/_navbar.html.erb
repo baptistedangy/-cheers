@@ -1,21 +1,23 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to root_path, class: "navbar-brand" do %>
-    <%= image_tag "https://res.cloudinary.com/duf8mmjpl/image/upload/v1606292973/Capture_d_e%CC%81cran_2020-11-25_a%CC%80_09.25.41-removebg-preview_ft3nfu.png" %>
-  <% end %>
+  <div class="thenav">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "https://res.cloudinary.com/duf8mmjpl/image/upload/v1606292973/Capture_d_e%CC%81cran_2020-11-25_a%CC%80_09.25.41-removebg-preview_ft3nfu.png" %>
+    <% end %>
     <% if !user_signed_in?  %>
         <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-      <% end %>
+    <% end %>
     <% if user_signed_in?  %>
         <div>
           <%= link_to user_selections_path, class: "nav-link homepage mr-4" do %>
-            <%= image_tag "https://icons-for-free.com/iconfiles/png/512/heart-131965017458786724.png", size: "40x40" %>
+            <i class="far fa-heart"></i>
           <% end %>
         </div>
         <div>
-          <%= link_to destroy_user_session_path, :method => 'delete', class: "nav-link" do %>
+          <%= link_to destroy_user_session_path, :method => 'delete', class: "nav-link logout" do %>
             <%= image_tag "https://static.thenounproject.com/png/30459-200.png", size: "30x30" %>
           <% end %>
         </div>
-      <% end %>
-    </div>
+    <% end %>
+  </div>
+</div>
 
