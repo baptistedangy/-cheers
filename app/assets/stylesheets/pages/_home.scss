@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth
 }
 
+.select2-container *:focus {
+      outline: none;
+}
+
 .home-background {
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +51,7 @@ a:hover {
 
 .align-items-end {
   align-items: flex-end !important;
-  padding-top: 134px;
+  padding-top: 131px;
   margin-left: 14px;
 }
 
@@ -72,7 +76,7 @@ a:hover {
 .home-explanation-detail {
   background-color: #6a040f;
   text-align: center;
-  height: 310px;
+  height: 317px;
 }
 
 .home-explanation-detail-1 {
@@ -83,6 +87,11 @@ a:hover {
   color: white;
   margin-left: -15px;
   margin-top: 16px;
+  p strong {
+    font-weight: bolder;
+    font-size: 28px;
+    // text-shadow: 0px 0px 9px rgb(0 0 0);
+  }
 }
 
 .home-explanation-detail-2 {
@@ -91,7 +100,12 @@ a:hover {
   font-weight: lighter;
   text-align: center;
   color: white;
-  margin-left: 47px
+  margin-left: 47px;
+   p strong {
+    font-weight: bolder;
+    font-size: 28px;
+    // text-shadow: 0px 0px 9px rgb(0 0 0);
+  }
 }
 
 .home-explanation-detail-3  {
@@ -100,7 +114,12 @@ a:hover {
   font-weight: lighter;
   text-align: center;
   color: white;
-  margin-left: -2px
+  margin-left: -2px;
+   p strong {
+    font-weight: bolder;
+    font-size: 28px;
+    // text-shadow: 0px 0px 9px rgb(0 0 0);
+  }
 }
 
 .home-explanation-detail img {
@@ -130,3 +149,5 @@ a:hover {
   transform: scale(1, -1);
   position: absolute;
 }
+
+
