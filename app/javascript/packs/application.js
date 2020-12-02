@@ -50,9 +50,9 @@ const changeSizeInX = () => {
 document.addEventListener('turbolinks:load', () => {
   initSelect2();
   initMapbox();
+  changeSizeInX();
   // initStarRating();
   insertShow();
   insertRate();
-  changeSizeInX();
 })
 

@@ -8,5 +8,4 @@ Rails.application.routes.draw do
   resources :user_selections, only: [:index, :destroy] do
     resources :ratings, only: [:new, :create]
   end
-  get 'profile', to: 'pages#profile'
 end
