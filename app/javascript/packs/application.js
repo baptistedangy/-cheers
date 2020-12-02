@@ -41,8 +41,11 @@ import { insertRate } from '../components/insert_rate';
 //         window.location.href = href
 //     }, 500)
 // }
-
-
+const changeSizeInX = () => {
+  $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+  });
+};
 
 document.addEventListener('turbolinks:load', () => {
   initSelect2();
@@ -50,5 +53,6 @@ document.addEventListener('turbolinks:load', () => {
   // initStarRating();
   insertShow();
   insertRate();
+  changeSizeInX();
 })
 
