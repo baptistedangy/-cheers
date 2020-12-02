@@ -19,7 +19,7 @@ const initSelect2 = () => {
   $('.select2').select2({
     templateResult: formatMeal,
     placeholder: "Sélectionnez votre repas",
-    allowClear: true,
+    allowClear: true
   });
 };
 

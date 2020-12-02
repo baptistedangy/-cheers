@@ -5,7 +5,7 @@
         <div><img class="logo" src="https://res.cloudinary.com/dsxjc2gud/image/upload/v1606753650/image_g2saz2.png"></div>
         <div><h1>Cheers!</h1></div>
         <div><p>Quel vin choisir avec ce plat?</p></div>
-        <%= select_tag "query", options_for_select(@meals.map{|meal| [meal.name, meal.name, { "data-photo" => meal.photo }] }),
+        <%= select_tag "query", options_for_select(@meals.map{|meal| [meal.name, meal.name, { "data-photo" => meal.photo }] }), include_blank: true,
           class: "form-control select2 meal-templating"%>
           <button name="button" type="submit" class="btn btn-flat">
             <i class="fas fa-search"></i>
