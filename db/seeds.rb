@@ -105,6 +105,7 @@ Meal.create(name: "Boeuf Bourguignon", main_category: viandes_rouges, cooking_me
 boeuf = Meal.last
 Meal.create(name: "Blanquette de Veau", main_category: viandes_blanches, cooking_method: sauce, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/blanquette_de_veau_d5hdp6.jpg")
 Meal.create(name: "Côte de Boeuf", main_category: viandes_rouges, cooking_method: grille, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/cote_de_boeuf_qmy6t2.jpg")
+cote = Meal.last
 Meal.create(name: "Volaille à la crème", main_category: viandes_blanches, cooking_method: sauce, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/volaille_creme_tejw4c.jpg")
 Meal.create(name: "Plateau de fruits de mer", main_category: poissons, cooking_method: grille, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/plateau_fruits_de_mer_uxwoa9.jpg")
 Meal.create(name: "Chèvre frais",main_category: fromages , cooking_method: frais, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/chevre_frais_mgykg5.jpg")
@@ -166,6 +167,7 @@ Wine.create(
   cepage: "chardonnay",
   wine_region: bourgogne,
   wine_type: blanc_sec)
+rully = Wine.last
 
 Wine.create(
   name: "Médoc", description: "La bouche des Médoc est bien structurée, pleine sur une trame de tannins savoureux. Les vins issus de graves sont puissants et corsés. Ils peuvent être tanniques dans leur jeunesse et gagnent à être attendus 5 à 10 ans.",
@@ -174,6 +176,7 @@ Wine.create(
   cepage: "cabernet-sauvignon. merlot. cabernet franc. petit verdot",
   wine_region: bordelais,
   wine_type: rouge)
+medoc = Wine.last
 
 Wine.create(
   name: "Saint-Estèphe",
@@ -225,11 +228,18 @@ Wine.create(
 puts"User selection"
 
 UserSelection.create(
-  wine: sancerre,
+  wine: rully,
   user: U3,
-  meal: boeuf
+  meal: boeuf,
+  created_at: (rand*10).days.ago,
   )
 
+UserSelection.create(
+  wine: medoc,
+  user: U3,
+  meal: cote,
+  created_at: (rand*5).days.ago,
+  )
 
 puts "Done"
 
