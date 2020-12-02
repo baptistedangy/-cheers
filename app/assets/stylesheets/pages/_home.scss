@@ -11,6 +11,7 @@ html {
   background-repeat: no-repeat;
   background-size: 75%;
   margin-bottom: 32px;
+  height: 375px;
 }
 
 .home-background h1 {
@@ -36,7 +37,6 @@ html {
 }
 
 #lorem {
-  margin-top: 65px;
   color: #6a040f;
 }
 
@@ -58,7 +58,7 @@ a:hover {
 
 .align-items-start {
   align-items: flex-start !important;
-  margin-top: -72px;
+  margin-top: -25px;
   margin-left: 15px;
   margin-bottom: -25px;
 }
@@ -78,7 +78,7 @@ a:hover {
   background-color: #6a040f;
   text-align: center;
   height: 321px;
-  margin-top: -47px;
+  margin-top: -69px;
 }
 
 .home-explanation-detail-1 {
@@ -102,10 +102,13 @@ a:hover {
   display: flex;
   align-items: baseline;
   margin-left: 31px;
+  width: 450px;
 }
 
-.home-explanation-detail-2 p {
-  text-align: start
+.explanation-detail-2 {
+  text-indent: 36px;
+  margin-left: -57px;
+  width: 371px;
 }
 
 .home-explanation-detail-3  {
