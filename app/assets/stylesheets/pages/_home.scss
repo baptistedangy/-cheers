@@ -10,9 +10,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 75%;
-  padding: 80px 0px;
-  margin-bottom: 60px;
-  margin-top: -46px;
+  margin-bottom: 32px;
 }
 
 .home-background h1 {
@@ -22,6 +20,8 @@ html {
   margin: 8px;
   text-align: center;
   color: #10002b;
+  padding-top: 62px;
+  padding-bottom: 25px;
   }
 
 .home-background p {
@@ -58,9 +58,9 @@ a:hover {
 
 .align-items-start {
   align-items: flex-start !important;
-  margin-top: -68px;
+  margin-top: -72px;
   margin-left: 15px;
-  margin-bottom: 21px;
+  margin-bottom: -25px;
 }
 
 .home-explanation h1 {
@@ -71,15 +71,14 @@ a:hover {
   text-align: center;
   color: #10002b;
   color: white;
-  padding-bottom: 30px;
   margin-top: 2px;
 }
 
 .home-explanation-detail {
   background-color: #6a040f;
   text-align: center;
-  height: 378px;
-  margin-top: -50px;
+  height: 321px;
+  margin-top: -47px;
 }
 
 .home-explanation-detail-1 {
@@ -103,6 +102,10 @@ a:hover {
   display: flex;
   align-items: baseline;
   margin-left: 31px;
+}
+
+.home-explanation-detail-2 p {
+  text-align: start
 }
 
 .home-explanation-detail-3  {
@@ -160,5 +163,6 @@ a:hover {
   background: #fff;
   color: black;
   margin-right: 10px;
+  text-align: center !important
 }
 
