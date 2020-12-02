@@ -2,8 +2,38 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .main-wraper-content {
   flex-grow: 1;
+  overflow: hidden;
+  height: 100%;
 }
+
+.user-selection-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.bannerdash {
+    background-position: center;
+    padding: 48px 0;
+    height: 18vh;
+    background-size: cover;
+    background-color: #10002b;
+    font-size: 21px;
+}
+
+.user-selections {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.user-selection-cards {
+  overflow-y: auto;
+  height: 100%
+}
+
