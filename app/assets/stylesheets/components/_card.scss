@@ -108,7 +108,7 @@
   position: relative
 }
 
-.flag {
+.cards-flag {
   position: absolute;
   top: -5px;
   right: 20px;
@@ -161,6 +161,9 @@
   overflow: hidden;
   z-index: 1;
   background: white;
+  border-radius: 28px;
+  margin: 0px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   .show-banner {
     overflow-y: auto;
     height: 100%;

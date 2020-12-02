@@ -9,10 +9,9 @@
     <div class="user-selection-cards">
       <div class="container ">
         <% @user_selections.order("created_at desc").each do |user| %>
-          <p class="date">Repas du <%= user.created_at.strftime("%e %b") %>: <strong><%=user.meal.name  %></strong></p>
-            <%= link_to user_selection_path(user), :method => 'delete', class: "cc", data: {confirm: "Are you sure?"} do %>
-              <p>+</p>
-            <% end %>
+        <p class="date">Repas du <%= user.created_at.strftime("%e %b") %>: <strong><%=user.meal.name  %></strong></p>
+
+
           <%= link_to wine_path(user.wine) do %>
           <div class="card-product mb-3">
             <%= cl_image_tag user.meal.photo %>
@@ -20,6 +19,11 @@
                 <p class="linktoshow"><strong><%= user.wine.name %></strong></p>
                 <p class="linktoshow"><%= image_tag("https://img.icons8.com/ios/452/money-bag-euro.png", size: "25x25") %><%= user.wine.price %></p>
                 <p class="linktoshow"><%= image_tag("https://img.icons8.com/pastel-glyph/2x/grape--v2.png", size: "25x25") %><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
+                <div class="cc">
+                  <%= link_to user_selection_path(user), :method => 'delete', data: {confirm: "Are you sure?"} do %>
+                    <p>+</p>
+                  <% end %>
+                </div>
                 <p>
                   <% if user.rating %>
                     <% user.rating.note.times do %>

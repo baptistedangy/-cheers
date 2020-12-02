@@ -30,6 +30,8 @@
 
 .card-product .card-product-infos {
   padding: 10px 25px;
+  position: relative;
+  width: 350px;
 }
 .linktoshow {
   text-decoration: none;
@@ -48,12 +50,13 @@
   color: #6a040f;
 }
 
-.cc {
+.card-product-infos .cc {
   position: absolute;
-  right: 33px;
+  right: 9px;
+  top: 1px;
   transform: rotate(45deg);
   text-decoration: none;
-  color: black;
+  color: #6a040f;
 
   font-size: 25px;
   &:hover{
@@ -61,7 +64,9 @@
     color: black;
   }
 }
-
+ .cc p {
+    font-size: 20px;
+  }
 .card-product-infos a {
   font-size: 15px;
   color: #6a040f;
