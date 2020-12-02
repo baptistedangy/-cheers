@@ -60,6 +60,7 @@ td {
 
 .wine-name {
   padding: 20% 10px;
+  position: relative;
 }
 
 .description {
@@ -79,7 +80,10 @@ td {
   font-size: 20px;
 }
 .flag {
-  display: inline-flex
+  display: inline-flex;
+  position: absolute;
+  top: 193px;
+  right: 265px;
 }
 
 .fa-angle-left {
