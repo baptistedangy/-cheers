@@ -1,6 +1,6 @@
 .search-container{
   height: 100%;
-  padding-top: 280px;
+  padding-top: 150px;
   color: white;
   background-image: url(/assets/grid.png);
 }
@@ -13,23 +13,23 @@
 
 .fa-search {
   border-radius: 50% !important;
-  bottom: 12px !important;
+  bottom: 11px !important;
   padding: 7px !important;
   background: #6a040f !important;
   color: white !important;
-  font-size: 20px !important;
-  margin-left: -35px !important;
+  font-size: 23px !important;
+  margin-left: -37px !important;
   position: absolute !important;
 }
 
 .search-form-control {
   position: relative;
   margin: 0px;
-  top: -136px;
   margin-left: 15px;
 
   .select2-container {
-    width: calc(100% - 40px) !important
+    width: calc(100% - 40px) !important;
+    padding-top: 10px;
   }
 }
 
