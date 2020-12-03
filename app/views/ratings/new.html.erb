@@ -1,7 +1,7 @@
 <div class="container formbox">
   <p class="mt-5 text-center">Qu'as tu pensez de ce vin ?</p>
   <div class="text-center mt-5">
-      <%= simple_form_for @rating, url: user_selection_ratings_path do |f| %>
+      <%= simple_form_for (@rating, url: user_selection_ratings_path, html: { class: "review_form" }) do |f| %>
         <%= f.input :note, collection: (1..5).to_a %>
         <%= f.button :submit, id: 'submit-button' %>
       <% end %>

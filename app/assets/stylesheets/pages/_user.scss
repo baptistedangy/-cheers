@@ -36,6 +36,12 @@
 .linktoshow {
   text-decoration: none;
   color: #10002b;
+  display:flex;
+  margin: 5px 0px;
+}
+
+.linktoshow img {
+  margin-right: 5px;
 }
 
 .fa-star {
