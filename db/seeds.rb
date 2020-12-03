@@ -108,7 +108,9 @@ Meal.create(name: "Côte de Boeuf", main_category: viandes_rouges, cooking_metho
 cote = Meal.last
 Meal.create(name: "Volaille à la crème", main_category: viandes_blanches, cooking_method: sauce, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/volaille_creme_tejw4c.jpg")
 Meal.create(name: "Plateau de fruits de mer", main_category: poissons, cooking_method: grille, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/plateau_fruits_de_mer_uxwoa9.jpg")
+fruitdmer = Meal.last
 Meal.create(name: "Chèvre frais",main_category: fromages , cooking_method: frais, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/chevre_frais_mgykg5.jpg")
+chevre = Meal.last
 Meal.create(name: "Couscous", main_category: viandes_rouges, cooking_method: epice, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/couscous_twnxf9.jpg")
 Meal.create(name: "Fondant au chocolat",main_category: desserts , cooking_method: chocolat, photo: "https://res.cloudinary.com/dsxjc2gud/image/upload/v1606380997/fondant_au_chocolat_yxbhch.jpg")
 
@@ -225,19 +227,22 @@ Wine.create(
   wine_region: loire,
   wine_type: blanc_sec)
 
+  menetou = Wine.last
+
+
 puts"User selection"
 
 UserSelection.create(
-  wine: rully,
+  wine: sancerre,
   user: U3,
-  meal: boeuf,
+  meal: fruitdmer,
   created_at: (rand*10).days.ago,
   )
 
 UserSelection.create(
-  wine: medoc,
+  wine: menetou,
   user: U3,
-  meal: cote,
+  meal: chevre,
   created_at: (rand*5).days.ago,
   )
 
