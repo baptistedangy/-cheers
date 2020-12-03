@@ -1,5 +1,9 @@
 .br-widget {
-  margin: 40px 117px;
+  margin: 39px 105px
+}
+
+.form-control a {
+  padding: 10px;
 }
 
 .formbox {
@@ -13,4 +17,16 @@
   padding: 15px;
   color: white;
   margin-bottom: 10px
+}
+
+.br-theme-css-stars .br-widget a {
+  text-decoration: none;
+  height: 18px;
+  width:23px;
+  float: left;
+  font-size: 23px;
+  margin-right: 5px;
+}
+.show-banner {
+  width: 102%;
 }
