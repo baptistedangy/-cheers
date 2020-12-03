@@ -1,9 +1,5 @@
-html {
-  scroll-behavior: smooth;
-}
-
-.select2-container *:focus {
-      outline: none;
+.select2-container:focus {
+  outline: none;
 }
 
 .home-background {
@@ -166,18 +162,18 @@ a:hover {
   background: #fff;
   color: black;
   margin-right: 10px;
-  text-align: center !important
+  text-align: center !important;
 }
 
 
 #lorem {
-  height: 100vh
+  height: 100vh;
 }
 
 #lorem-2 {
-  height: 104vh
+  height: 104vh;
 }
 
 .main-body {
-  margin-top: -40px
+  margin-top: -40px;
 }

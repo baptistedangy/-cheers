@@ -3,7 +3,7 @@
   padding-top: 150px;
   margin-left: 133px;
   color: white;
-  background-image: url(/assets/grid.png);
+  background-image: asset-url("grid.png");
 }
 
 .logo {
@@ -96,7 +96,7 @@
 }
 
 .btn .btn-flat {
-  width: 10px
+  width: 10px;
 }
 
 .meal-templating button {
