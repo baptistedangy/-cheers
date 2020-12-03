@@ -19,7 +19,7 @@
   background: #6a040f !important;
   color: white !important;
   font-size: 23px !important;
-  margin-left: -37px !important;
+  margin-left: -43px !important;
   position: absolute !important;
 }
 
@@ -29,8 +29,8 @@
   margin-left: 15px;
 
   .select2-container {
-    width: calc(100% - 40px) !important;
-    padding-top: 10px;
+    width: calc(100% - 27px) !important;
+    padding-top: 9px;
   }
 }
 
@@ -95,5 +95,16 @@
   -webkit-user-select: none;
 }
 
+.btn .btn-flat {
+  width: 10px
+}
 
+.meal-templating button {
+  background-color: transparent;
+  visibility: hidden;
+}
+
+button:focus {
+  outline: none;
+}
 

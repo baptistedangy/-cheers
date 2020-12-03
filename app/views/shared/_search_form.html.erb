@@ -7,7 +7,7 @@
         <div><p>Quel vin choisir avec ce plat?</p></div>
         <%= select_tag "query", options_for_select(@meals.map{|meal| [meal.name, meal.name, { "data-photo" => meal.photo }] }), include_blank: true,
           class: "form-control select2 meal-templating"%>
-          <button name="button" type="submit" class="btn btn-flat">
+          <button name="button" type="submit" style= "background-color: transparent; border: transparent;">
             <i class="fas fa-search"></i>
           </button>
       </label>
@@ -17,7 +17,5 @@
     <a href="#lorem"><i class="fas fa-chevron-down"></i></a>
   </div>
 </div>
-
-
 
 
