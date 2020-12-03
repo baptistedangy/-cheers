@@ -10,8 +10,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 70px;
-  margin: 0 !important ;
+  width: 78px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -31,7 +30,7 @@
 }
 
 .thenav {
-  height: 35px;
+  height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -47,8 +46,16 @@
   color:#6a040f!important;
 }
 
-.logout {
-  transform: rotateY(180deg)!important;
-  padding-left: 0px;
-  padding-bottom: 10px;
+.active {
+  border-top: 4px solid #6a040f;
 }
+
+.logout {
+  transform: rotateY(180deg) !important;
+  padding-left: 0px;
+  margin-left: -15px;
+  padding-bottom: 12px;
+}
+
+
+

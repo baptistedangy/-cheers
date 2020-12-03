@@ -10,8 +10,6 @@
       <div class="container ">
         <% @user_selections.order("created_at desc").each do |user| %>
         <p class="date">Repas du <%= user.created_at.strftime("%e %b") %>: <strong><%=user.meal.name  %></strong></p>
-
-
           <%= link_to wine_path(user.wine) do %>
           <div class="card-product mb-3">
             <%= cl_image_tag user.meal.photo %>
