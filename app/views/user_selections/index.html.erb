@@ -22,7 +22,7 @@
                   <p><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
                 </div>
                 <div class="cc">
-                  <%= link_to user_selection_path(user), :method => 'delete', data: {confirm: "Are you sure?"} do %>
+                  <%= link_to user_selection_path(user), :method => 'delete', data: {confirm: "Es tu sur de supprimer?"} do %>
                     <p>+</p>
                   <% end %>
                 </div>
