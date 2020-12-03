@@ -1,6 +1,7 @@
 .search-container{
   height: 100%;
   padding-top: 150px;
+  margin-left: 133px;
   color: white;
   background-image: url(/assets/grid.png);
 }
@@ -18,7 +19,7 @@
   background: #6a040f !important;
   color: white !important;
   font-size: 23px !important;
-  margin-left: -37px !important;
+  margin-left: -43px !important;
   position: absolute !important;
 }
 
@@ -28,8 +29,8 @@
   margin-left: 15px;
 
   .select2-container {
-    width: calc(100% - 40px) !important;
-    padding-top: 10px;
+    width: calc(100% - 27px) !important;
+    padding-top: 9px;
   }
 }
 
@@ -41,7 +42,6 @@
 }
 
 .search-form-control .btn {
-  height: 34px;
   margin-left: -7px;
   color: white
 }
@@ -95,4 +95,16 @@
   -webkit-user-select: none;
 }
 
+.btn .btn-flat {
+  width: 10px
+}
+
+.meal-templating button {
+  background-color: transparent;
+  visibility: hidden;
+}
+
+button:focus {
+  outline: none;
+}
 

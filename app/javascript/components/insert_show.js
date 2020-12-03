@@ -11,12 +11,12 @@ const insertShow = () => {
       .then((data) => {
         const container = document.getElementById('wine-show-container');
         container.innerHTML = data.html;
-        container.style.display = "block"
+        container.style.transform = "translateY(0%)";
 
         const backButton = document.getElementById("wine-show-container")
 
         backButton.addEventListener('click', (event) => {
-          container.style.display ="none";
+          container.style.transform = "translateY(100%)";
         })
       })
     })
