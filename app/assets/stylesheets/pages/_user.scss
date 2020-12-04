@@ -25,7 +25,8 @@
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 5px;
+  padding: 0px;
 }
 
 .card-product .card-product-infos {
@@ -81,6 +82,9 @@
 .card-product-infos a {
   font-size: 15px;
   color: #6a040f;
+  &:hover {
+    text-decoration:none;
+  }
 }
 
 .linktoshow img {
@@ -95,3 +99,4 @@
 a.rate-card-link {
   text-decoration: none
 }
+

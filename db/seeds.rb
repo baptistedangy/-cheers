@@ -144,6 +144,9 @@ Wine.create(
    wine_region: bourgogne,
    wine_type: rouge)
 
+cdn = Wine.last
+
+
 Wine.create(
   name: "Corton Charlemagne",
   description: "A Corton Charlemagne Le chardonnay tire de ces différents climats un bouquet équilibré, élégant et des plus délicats, alliant les agrumes, le beurre, la pomme au four, l’ananas, le tilleul, le genévrier, la fougère, la cannelle et le silex. Ce sont des vins amples et gras, qui pour révéler leur finesse et leur complexité, doivent vieillir longtemps.",
@@ -232,6 +235,7 @@ Wine.create(
 
 puts"User selection"
 
+
 UserSelection.create(
   wine: sancerre,
   user: U3,
@@ -244,6 +248,13 @@ UserSelection.create(
   user: U3,
   meal: chevre,
   created_at: (rand*5).days.ago,
+  )
+
+UserSelection.create(
+  wine: cdn,
+  user: U3,
+  meal: boeuf,
+  created_at: (rand*3).days.ago,
   )
 
 puts "Done"
