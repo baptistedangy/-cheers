@@ -34,6 +34,7 @@ import { initMapbox } from '../plugins/init_mapbox';
 import { initSelect2 } from '../plugins/init_select2';
 import { insertShow } from '../components/insert_show';
 import { insertRate } from '../components/insert_rate';
+// import { pageScrolling } from '../components/loading';
 
 // window.transitionToPage = function(href) {
 //     document.querySelector('body').style.transform = "translate(0px, -100vh)"
@@ -54,5 +55,6 @@ document.addEventListener('turbolinks:load', () => {
   // initStarRating();
   insertShow();
   insertRate();
+  // pageScrolling();
 })
 
