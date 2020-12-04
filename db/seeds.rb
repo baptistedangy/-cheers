@@ -240,21 +240,19 @@ UserSelection.create(
   wine: sancerre,
   user: U3,
   meal: fruitdmer,
-  created_at: (rand*10).days.ago,
+  created_at: 13.days.ago,
   )
-
 UserSelection.create(
   wine: menetou,
   user: U3,
   meal: chevre,
-  created_at: (rand*5).days.ago,
+  created_at: 9.days.ago,
   )
-
 UserSelection.create(
   wine: cdn,
   user: U3,
   meal: boeuf,
-  created_at: (rand*3).days.ago,
+  created_at: 6.days.ago,
   )
 
 puts "Done"
