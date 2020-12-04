@@ -16,10 +16,10 @@
               <div class="card-product-infos">
                 <p class="linktoshow"><strong><%= user.wine.name %></strong></p>
                 <div class="linktoshow"><%= image_tag("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606922410/bourse_co349v.png", size: "25x25") %>
-                  <p><%= user.wine.price %></p>
+                  <p class="textalignement"><%= user.wine.price %></p>
                 </div>
                 <div class="linktoshow"><%= image_tag("https://res.cloudinary.com/duf8mmjpl/image/upload/v1606928058/grape_aasf9l.png", size: "25x25") %>
-                  <p><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
+                  <p class="textalignement"><%= user.wine.wine_region.name %>, <%= user.wine.wine_type.name %></p>
                 </div>
                 <div class="cc">
                   <%= link_to user_selection_path(user), :method => 'delete', data: {confirm: "Es tu sur de supprimer?"} do %>
