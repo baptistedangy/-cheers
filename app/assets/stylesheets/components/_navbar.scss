@@ -10,7 +10,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 78px;
+  width: 70px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -47,7 +47,9 @@
 }
 
 .active {
-  border-top: 4px solid #6a040f;
+  border-top: 3px solid #6a040f;
+  border-bottom: 3px solid #6a040f;
+  height: 66px;
 }
 
 .logout {
